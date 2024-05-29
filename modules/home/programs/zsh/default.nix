@@ -13,7 +13,6 @@
     };
     shellAliases = {
       vim = "nvim";
-      ls = "eza";
     };
     initExtra = ''
       bindkey '^f' autosuggest-accept
