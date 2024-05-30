@@ -21,6 +21,10 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    schizofox = {
+      url = "github:schizofox/schizofox";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: 
@@ -38,12 +42,12 @@
       modules = [
         ./nixos/configuration.nix
         home-manager.nixosModules.home-manager
-	{
-	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
-	  home-manager.users.nakul = import ./home/home.nix;
-	  home-manager.extraSpecialArgs = specialArgs;
-	}
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.nakul = import ./home/home.nix;
+          home-manager.extraSpecialArgs = specialArgs;
+        }
       ];
     };
   };

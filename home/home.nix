@@ -2,8 +2,10 @@
   imports = [
     inputs.hyprland.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
+    inputs.schizofox.homeManagerModules
     ../modules/home
   ];
+
   home = {
     username = "nakul";
     homeDirectory = "/home/nakul";
