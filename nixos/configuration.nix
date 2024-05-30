@@ -14,8 +14,8 @@
   hardware.opengl.enable = true;
   nix.gc = {
     automatic = true;
-    dates = "daily";
-    options = "--delete-older-than +5";
+    dates = "weekly";
+    options = "--delete-older-than 7d";
   };
   nix.optimise = {
     automatic = true;

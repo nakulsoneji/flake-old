@@ -18,7 +18,6 @@
       bindkey '^f' autosuggest-accept
       bindkey '^p' history-substring-search-up
       bindkey '^n' history-substring-search-down
-      fpath+=(${pkgs.pure-prompt}/share/zsh/site-functions)
       autoload -U promptinit; promptinit
       prompt pure
     '';
