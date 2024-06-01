@@ -1,7 +1,7 @@
 { lib, ... }: {
   imports = lib.umport {
     path = ./.;
-    exclude = [ ./default.nix ];
+    exclude = [ ./default.nix ./schizofox ];
   }; 
 
   programs.git = {

@@ -1,8 +1,8 @@
 { inputs, pkgs, lib, ... }: {
   imports = [
     inputs.hyprland.homeManagerModules.default
+    inputs.schizofox.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
-    inputs.schizofox.homeManagerModules
     ../modules/home
   ];
 
